@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style-type: none;
+            font-family: "DM Sans", sans-serif;
+        }
+
+        .container {
+            margin: 0 auto;
+            max-width: 1170px;
+        }
+
+        section {
+            display: flex;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .row {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            row-gap: 30px;
+            column-gap: 29px;
+        }
+
+        .card {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 270px;
+            height: 160px;
+            background: rgba(235, 234, 237, 0.4);
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            font-weight: 700;
+            font-size: 42px;
+            color: #1E0E62;
+            line-height: 123%;
+            letter-spacing: -0.4px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 28px;
+            font-weight: 500;
+            color: #15143966;
+            text-align: center;
+            margin-bottom: 52px;
+            margin-top: 20px;
+        }
+
+
+        @media (max-width: 1024px) {
+            .row {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            
+        }
+
+        @media (max-width:768px) {
+            .row {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 576px) {
+            .row {
+                grid-template-columns: repeat(1, 1fr);
+            }
+            h1{
+                font-size: 30px;
+            
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <section>
+        <div class="container">
+            <h1>Trusted by over 500 great businesses</h1>
+            <p>Startup Framework includes great form options for your startup projects. Each <br> component is coded for
+                web which makes creating a website quick and easy.</p>
+            <div class="row">
+                <div class="card">
+                    <img class="card-image" width="113" height="113" src="./Starbucks.png" alt="loggo1">
+                </div>
+                <div class="card">
+                    <img class="card-image" width="175" height="66" src="./Pepsi.png" alt="loggo2">
+                </div>
+                <div class="card">
+                    <img class="card-image" width="184" height="44" src="./Walmart.png" alt="loggo3">
+                </div>
+                <div class="card">
+                    <img class="card-image" width="193" height="39" src="./Azendoo.png" alt="loggo4">
+                </div>
+                <div class="card">
+                    <img class="card-image" width="120" height="57" src="./CNN@4x.png" alt="loggo5">
+                </div>
+                <div class="card">
+                    <img class="card-image" width="162" height="30" src="./Philips@4x.png" alt="loggo6">
+                </div>
+                <div class="card">
+                    <img class="card-image" width="99" height="101" src="./Pizza Hut.png" alt="loggo7">
+                </div>
+                <div class="card">
+                    <img class="card-image" width="185" height="57" src="./Beanstalk.png" alt="loggo8">
+                </div>
+            </div>
+    </section>
+</body>
+
+</html>
